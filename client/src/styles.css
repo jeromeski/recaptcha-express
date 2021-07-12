@@ -1,0 +1,337 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600 !important;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: white;
+  width: 100%;
+}
+
+.root {
+  height: 100%;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+/* 1. General */
+
+/* 2. Components */
+
+/* 3. Layout */
+
+/* 4. Utilities */
+
+/* 5. Overrides */
+
+/* Layout */
+
+
+
+.header {
+  background-color: lightgray;
+}
+
+
+
+.main {
+  height: 100%;
+}
+
+
+
+.btn {
+  padding: 5px 15px 5px 15px;
+}
+
+.btn > *:first-child {
+  margin-right: 5px;
+}
+
+.input-id {
+  padding: 5px 15px 5px 15px;
+}
+
+
+/* start of page layout */
+
+.page-layout {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* end of page layout */
+
+/* start of header */
+
+.header {
+  background-color: white;
+  width: 100%;
+  clear: both;
+  border-bottom: 1px solid #dfdfdf;
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between
+}
+
+.logo-wrapper {
+  padding-left: 15px;
+  height: 100%;
+  width: 12rem;
+  margin: 0;
+}
+
+.tos-wrapper {
+  padding-right: 15px;
+
+}
+
+.tos-wrapper > * {
+  margin: 0;
+  color: black;
+  font-weight: 400;
+  font-size: .85rem;
+}
+
+.logo {
+  margin: 0;
+  height: auto;
+  max-width: 100%;
+}
+
+/* end of header */
+
+/* start verify component */
+
+.content {
+  margin-top: 15rem;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  .content {
+    margin-top: 10rem;
+  }
+}
+
+/* end verify component */
+
+/* start result page */
+.status-text {
+  text-align: center;
+}
+
+.employee {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+.position {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 600px) {
+   .employee {
+     font-size: 2rem;
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .position {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .employee {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+ .position {
+   font-size: 1.25rem;
+ }
+}
+
+
+.employee-status {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.resign-date {
+  font-size: 1rem
+}
+
+/* end result page */
+
+/* start tos page */
+
+.tos {
+  height: 100%;
+  width: 100%;
+  margin-top: 7rem;
+  /* overflow-y: hidden; */
+}
+
+/* end tos page */
+
+/* end Modal */
+
+
+/* start common components */
+
+.back-btn {
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .back-btn {
+    margin-left: 1rem !important;
+  }
+}
+
+.submit-btn {
+  margin-left: 6rem ;
+  margin-top: 2rem;
+}
+
+.recaptcha {
+  margin-left: 6rem ;
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .submit-btn {
+    margin-left: 0;
+
+  }
+  .recaptcha {
+    margin-left: 0;
+
+  }
+}
+
+
+.peopleware {
+  margin-top: 7rem;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.p-content{
+  padding: 0 5px 5px 5px;
+}
+
+
+
+/* start utilities */
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.ml-5 {
+  margin-left: 6rem !important;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.error-recaptcha {
+  color: red;
+  font-weight: 400;
+}
+
+
+/* end utilities */
+
+/* start overrides */
+
+.ant-card-bordered {
+  width: 80vw;
+  border-left: 10px solid lightgray;
+}
+
+.ant-modal-title {
+  color: red !important;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.modal-title {
+  margin-left: .5rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .ant-card-bordered {
+    padding: 0 !important;
+    width: 100vw;
+  }
+}
+
+.ant-table-pagination {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .ant-card-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+
+/* end overrides */
